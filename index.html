@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMarket - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="#">ITMarket</a>
+            </div>
+
+            <!-- Навигация -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Главная</a></li>
+
+                    <!-- Категории с выпадающим меню -->
+                    <li class="dropdown">
+                        <a href="#">Категории</a>
+                        <ul class="dropdown-menu">
+                            <li class="submenu">
+                                <a href="#">Ноутбуки</a>
+                                <ul class="submenu-items">
+                                    <li><a href="#">Для игр</a></li>
+                                    <li><a href="#">Для работы</a></li>
+                                    <li><a href="#">Для учебы</a></li>
+                                    <li><a href="#">Бюджетные</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">Стационарные ПК</a>
+                                <ul class="submenu-items">
+                                    <li><a href="#">Игровые ПК</a></li>
+                                    <li><a href="#">Офисные ПК</a></li>
+                                    <li><a href="#">Для дома</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Мониторы</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Перемещаем "Комплектующие для ПК" сюда -->
+                    <li class="dropdown">
+                        <a href="#">Комплектующие для ПК</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Материнские платы</a></li>
+                            <li><a href="#">Процессоры</a></li>
+                            <li><a href="#">Оперативная память</a></li>
+                            <li><a href="#">Видеокарты</a></li>
+                            <li><a href="#">Жесткие диски</a></li>
+                            <li><a href="#">Корпуса</a></li>
+                            <li><a href="#">Блоки питания</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Оставшиеся пункты -->
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                </ul>
+            </nav>
+
+            <!-- Поиск -->
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+                <button type="submit">Поиск</button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Слайдер -->
+    <div class="promo-slider">
+        <div class="slider">
+            <!-- Первый слайд -->
+            <div class="slider-item active">
+                <div class="slide-content">
+                    <img src="img/slide1.jpg" alt="ПК для игр">
+                    <div class="slide-text">
+                        <h1>Игровые ПК с мощными характеристиками</h1>
+                        <p>Погрузитесь в мир современных игр с нашими игровыми ПК. Высокая производительность и надежность.</p>
+                        <button class="btn-slide">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Второй слайд -->
+            <div class="slider-item">
+                <div class="slide-content">
+                    <img src="img/slide2.jpg" alt="Ноутбуки">
+                    <div class="slide-text">
+                        <h1>Ноутбуки для работы и учебы</h1>
+                        <p>Надежные ноутбуки для любых задач. Легкие, быстрые и с долгим временем работы.</p>
+                        <button class="btn-slide">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Третий слайд -->
+            <div class="slider-item">
+                <div class="slide-content">
+                    <img src="img/slide3.jpg" alt="Скидки">
+                    <div class="slide-text">
+                        <h1>Скидки до 20% на комплектующие!</h1>
+                        <p>Успейте купить лучшие комплектующие для вашего ПК с выгодной скидкой. Только в этом месяце.</p>
+                        <button class="btn-slide">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки навигации -->
+        <button class="nav-button prev">&#10094;</button>
+        <button class="nav-button next">&#10095;</button>
+    </div>
+
+    <section class="products">
+        <div class="container">
+            <h2>Товары под акцию</h2>
+            <div class="product-grid">
+                <!-- Товар 1 -->
+                <div class="product-item">
+                    <img src="img/product1.jpg" alt="Товар 1">
+                    <h3>Игровой компьютер</h3>
+                    <p>Успей купить по акции! Мощный игровой ПК с топовыми характеристиками.</p>
+                    <span class="price">₽ 75 000 <span class="old-price">₽ 85 000</span></span>
+                    <a href="#" class="btn" data-id="1" data-name="Игровой компьютер" data-price="75000" data-img="img/product1.jpg">Купить</a>
+                </div>
+                <!-- Товар 2 -->
+                <div class="product-item">
+                    <img src="img/product2.jpg" alt="Товар 2">
+                    <h3>Ноутбук ASUS</h3>
+                    <p>Ноутбук ASUS с отличной скидкой! Идеален для работы и учебы.</p>
+                    <span class="price">₽ 49 000 <span class="old-price">₽ 55 000</span></span>
+                    <a href="#" class="btn" data-id="2" data-name="Ноутбук ASUS" data-price="49000" data-img="img/product2.jpg">Купить</a>
+                </div>
+                <!-- Товар 3 -->
+                <div class="product-item">
+                    <img src="img/product3.jpg" alt="Товар 3">
+                    <h3>Мышь Logitech</h3>
+                    <p>Легендарная мышь Logitech с дополнительной скидкой для геймеров.</p>
+                    <span class="price">₽ 1 800 <span class="old-price">₽ 2 000</span></span>
+                    <a href="#" class="btn" data-id="3" data-name="Мышь Logitech" data-price="1800" data-img="img/product3.jpg">Купить</a>
+                </div>
+                <!-- Товар 4 -->
+                <div class="product-item">
+                    <img src="img/product4.jpg" alt="Товар 4">
+                    <h3>Клавиатура Razer</h3>
+                    <p>Скидка на механическую клавиатуру Razer с подсветкой для геймеров.</p>
+                    <span class="price">₽ 5 500 <span class="old-price">₽ 6 000</span></span>
+                    <a href="#" class="btn" data-id="4" data-name="Клавиатура Razer" data-price="5500" data-img="img/product4.jpg">Купить</a>
+                </div>
+                <!-- Товар 5 -->
+                <div class="product-item">
+                    <img src="img/product5.jpg" alt="Товар 5">
+                    <h3>Сетевое оборудование TP-Link</h3>
+                    <p>Сетевое оборудование TP-Link по сниженной цене — выгодная покупка для дома и офиса.</p>
+                    <span class="price">₽ 3 000 <span class="old-price">₽ 3 500</span></span>
+                    <a href="#" class="btn" data-id="5" data-name="Сетевое оборудование TP-Link" data-price="3000" data-img="img/product5.jpg">Купить</a>
+                </div>
+                <!-- Товар 6 -->
+                <div class="product-item">
+                    <img src="img/product6.jpg" alt="Товар 6">
+                    <h3>Монитор Dell</h3>
+                    <p>Качество изображения и скидка! Прекрасный монитор для работы и игр по акции.</p>
+                    <span class="price">₽ 13 500 <span class="old-price">₽ 15 000</span></span>
+                    <a href="#" class="btn" data-id="6" data-name="Монитор Dell" data-price="13500" data-img="img/product6.jpg">Купить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ITMarket. Все права защищены.</p>
+            <p>Контакты: +7 (999) 123-45-67 | info@itmarket.ru</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
